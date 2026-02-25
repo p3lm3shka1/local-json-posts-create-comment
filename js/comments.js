@@ -66,7 +66,7 @@ commentForm.addEventListener("submit", async (e) => {
       body: JSON.stringify({
         author,
         text,
-        postId: postId,
+        postId: String(postId),
         createdAt: new Date(),
       }),
     });

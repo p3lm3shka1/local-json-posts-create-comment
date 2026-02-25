@@ -1,4 +1,29 @@
 {
-  "posts": [],
-  "comments": []
+  "posts": [
+    {
+      "id": "fd22",
+      "imageUrl": "https://www.shutterstock.com/image-photo/young-handsome-business-man-wearing-260nw-1532624873.jpg",
+      "author": "Mr. Suitman",
+      "title": "I love suits!",
+      "description": "Can you see my profile picture? That's how I love them suits!",
+      "createdAt": "2026-02-25T17:30:02.428Z"
+    },
+    {
+      "id": "0248",
+      "imageUrl": "https://cdn.displate.com/artwork/857x1200/2023-09-16/f315d43e664a255e71735018f88a1aa9_42158f6f25a27aee11e56f11ded9d11e.jpg",
+      "author": "Guin",
+      "title": "Noot Noot",
+      "description": "Noot Noot",
+      "createdAt": "2026-02-25T17:33:43.797Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "378c",
+      "author": "Mr. Suitman JR",
+      "text": "LOVE THEM TOO!!!",
+      "postId": "fd22",
+      "createdAt": "2026-02-25T17:30:18.030Z"
+    }
+  ]
 }

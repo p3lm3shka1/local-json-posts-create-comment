@@ -8,20 +8,21 @@ async function getPosts() {
 
     posts.forEach((post) => {
       mainList.innerHTML += `
-        <div class="card">
-        <div class="post-card" id="${post.id}">
+      <div class="card">
+	      <div class="post-card" id="${post.id}">
         <button class="post-card-delete-btn" data-id="${post.id}">Delete Post</button>
-            <div class="post-card-header">
-              <img class="post-card-avatar" src="${post.imageUrl || ""}" alt="avatar" />
-              <div class="post-card-author">${post.author || "Unknown"}</div>
-              </div>
-            <div class="post-card-title">
-             <a href="./comments.html?id=${post.id}">${post.title || ""}</a>
-             </div>
-             <a class="post-card-description" href="./comments.html?id=${post.id}">${post.description || ""}</a>
-            <div class="post-card-date">${new Date(post.createdAt).toLocaleString()}</div>
-          </div>
-        </div>
+		        <div class="post-card-header">
+			      <img class="post-card-avatar" src="${post.imageUrl || ""}" alt="avatar" />
+			      <div class="post-card-author">${post.author || "Unknown"}</div>
+		     </div>
+		      <div class="post-card-title">
+			      <a href="./comments.html?id=${post.id}">${post.title || ""}</a>
+		      </div>
+		          <a class="post-card-description" href="./comments.html?id=${post.id}">${post.description || ""}</a>
+		          <div class="post-card-date">${new Date(post.createdAt).toLocaleString()}</div>
+		        </div>
+	      </div>
+      </div>
         `;
     });
   } catch (error) {

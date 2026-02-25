@@ -51,19 +51,22 @@ header h1 {
 }
 
 .post-card-delete-btn {
-  background: none;
-  color: var(--muted);
-  border: none;
   padding: 6px 12px;
   font-size: 0.85rem;
   cursor: pointer;
   position: absolute;
   top: 30px;
   right: 10px;
+  background: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  border: none;
 }
 
 .post-card-delete-btn:hover {
-  color: var(--text);
+  background: var(--primary-hover);
 }
 
 .post-card-title {
