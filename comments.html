@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style//base.css" />
+    <link rel="stylesheet" href="./style/comments.css" />
+    <script src="./js/comments.js" defer></script>
+    <title>Fake Social Media - Comments</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <a href="./post.html" class="back-link btn">Atgal į srautą</a>
+      <div id="post-content"></div>
+      <div class="comments-section">
+        <h2>Komentarai</h2>
+        <form class="comment-form" id="comment-form">
+          <input type="text" name="author" placeholder="Jūsų vardas" required />
+          <input
+            type="text"
+            name="text"
+            placeholder="Rašykite komentarą..."
+            required
+          />
+          <button type="submit" class="btn">Pridėti komentarą</button>
+        </form>
+        <div id="comments-list" class="comments-list"></div>
+      </div>
+    </div>
+  </body>
+</html>

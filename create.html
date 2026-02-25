@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/base.css" />
+    <link rel="stylesheet" href="./style/create.css" />
+    <script src="./js/create.js" defer></script>
+    <title>Fake Social Media - New Post</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <a href="./post.html" class="back-link btn">Atgal į srautą</a>
+      <div class="form-page">
+        <h1>Sukurti naują įrašą</h1>
+        <form class="form-card" id="create-post-form">
+          <div class="form-group">
+            <label for="imageUrl">Autoriaus nuotraukos URL</label>
+            <input
+              type="url"
+              id="imageUrl"
+              name="imageUrl"
+              placeholder="URL"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="authorName">Vardas Pavardė</label>
+            <input
+              type="text"
+              id="authorName"
+              name="authorName"
+              placeholder="Vardas Pavardė"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="title">Įrašo pavadinimas</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Įrašo pavadinimas"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="description">Įrašo turinys</label>
+            <textarea
+              id="description"
+              name="description"
+              placeholder="Įrašo turinys"
+              required
+            ></textarea>
+          </div>
+          <div class="form-btns">
+            <button type="submit" class="btn">Paskelbti</button>
+            <a href="./post.html" class="btn">Atšaukti</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
