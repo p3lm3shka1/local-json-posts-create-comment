@@ -10,7 +10,7 @@ async function getPosts() {
       mainList.innerHTML += `
         <div class="card">
         <div class="post-card" id="${post.id}">
-        <button class="post-card-delete-btn" data-id="${post.id}">Ištrinti</button>
+        <button class="post-card-delete-btn" data-id="${post.id}">Delete Post</button>
             <div class="post-card-header">
               <img class="post-card-avatar" src="${post.imageUrl || ""}" alt="avatar" />
               <div class="post-card-author">${post.author || "Unknown"}</div>

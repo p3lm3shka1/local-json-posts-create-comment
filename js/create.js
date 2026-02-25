@@ -10,11 +10,6 @@ form.addEventListener("submit", async function (e) {
   const title = document.getElementById("title").value;
   const description = document.getElementById("description").value;
 
-  if (!imageUrl || !authorName || !title || !description) {
-    alert("Užpildykite visus laukus.");
-    return;
-  }
-
   try {
     await fetch(POSTS_API, {
       method: "POST",

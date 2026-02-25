@@ -41,7 +41,7 @@ async function getComments() {
     comments.forEach((comment) => {
       commentsList.innerHTML += `
         <div class="comment-item">
-        <button class="comment-delete-btn" data-id="${comment.id}">Ištrinti</button>
+        <button class="comment-delete-btn" data-id="${comment.id}">Delete</button>
           <div class="comment-author">${comment.author}</div>
           <div class="comment-text">${comment.text}</div>
           <div class="comment-date">${new Date(comment.createdAt).toLocaleString()}</div>
@@ -58,11 +58,6 @@ commentForm.addEventListener("submit", async (e) => {
 
   const author = commentForm.author.value;
   const text = commentForm.text.value;
-
-  if (!author || !text) {
-    alert("Užpildykite visus laukus.");
-    return;
-  }
 
   try {
     await fetch(COMMENTS_API, {
