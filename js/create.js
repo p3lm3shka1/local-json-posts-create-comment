@@ -2,7 +2,7 @@ const POSTS_API = "http://localhost:3003/posts";
 
 const form = document.getElementById("create-post-form");
 
-form.addEventListener("submit", async function (e) {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   const imageUrl = document.getElementById("imageUrl").value;
@@ -11,7 +11,7 @@ form.addEventListener("submit", async function (e) {
   const description = document.getElementById("description").value;
 
   try {
-    await fetch(POSTS_API, {
+    fetch(POSTS_API, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

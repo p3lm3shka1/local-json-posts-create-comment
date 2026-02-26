@@ -53,14 +53,14 @@ async function getComments() {
   }
 }
 
-commentForm.addEventListener("submit", async (e) => {
+commentForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const author = commentForm.author.value;
   const text = commentForm.text.value;
 
   try {
-    await fetch(COMMENTS_API, {
+    fetch(COMMENTS_API, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -80,11 +80,13 @@ commentForm.addEventListener("submit", async (e) => {
   }
 });
 
-commentsList.addEventListener("click", async (e) => {
+commentsList.addEventListener("click", (e) => {
   if (e.target.classList.contains("comment-delete-btn")) {
     const id = e.target.dataset.id;
 
-    await fetch(`${COMMENTS_API}/${id}`, { method: "DELETE" });
+    fetch(`${COMMENTS_API}/${id}`, {
+      method: "DELETE",
+    });
     getComments();
   }
 });

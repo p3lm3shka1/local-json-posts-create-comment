@@ -30,11 +30,13 @@ async function getPosts() {
   }
 }
 
-mainList.addEventListener("click", async (e) => {
+mainList.addEventListener("click", (e) => {
   if (e.target.classList.contains("post-card-delete-btn")) {
     const id = e.target.dataset.id;
 
-    await fetch(`${POSTS_API}/${id}`, { method: "DELETE" });
+    fetch(`${POSTS_API}/${id}`, {
+      method: "DELETE",
+    });
     getPosts();
   }
 });
