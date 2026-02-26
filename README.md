@@ -15,7 +15,7 @@ You can create posts, view a feed, and leave comments on each post.
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - **HTML5**
 - **CSS3**
